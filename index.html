@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的公众号</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, 'PingFang SC', 'Helvetica Neue', sans-serif;
+    background: #f5f7fa; min-height: 100vh; color: #333;
+  }
+
+  header {
+    background: linear-gradient(135deg, #0a0e1a 0%, #1a1f35 100%);
+    padding: 48px 24px 40px;
+    text-align: center;
+  }
+  header h1 { font-size: 28px; font-weight: 800; color: #fff; margin-bottom: 8px; }
+  header p { font-size: 14px; color: #8892b0; }
+  header .badge {
+    display: inline-block; margin-top: 16px;
+    padding: 4px 14px; border-radius: 20px;
+    background: rgba(0,212,255,.12); border: 1px solid rgba(0,212,255,.3);
+    font-size: 12px; color: #00d4ff; letter-spacing: .06em;
+  }
+
+  main { max-width: 720px; margin: 0 auto; padding: 40px 20px; }
+
+  h2 { font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+       color: #999; margin-bottom: 16px; }
+
+  .card-grid { display: flex; flex-direction: column; gap: 14px; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 22px 24px;
+    border: 1px solid #e8e8e8; text-decoration: none; color: inherit;
+    display: flex; align-items: center; gap: 16px;
+    transition: all .18s; box-shadow: 0 1px 4px rgba(0,0,0,.04);
+  }
+  .card:hover { border-color: #1677ff; box-shadow: 0 4px 16px rgba(22,119,255,.12); transform: translateY(-1px); }
+  .card-icon {
+    width: 48px; height: 48px; border-radius: 12px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+  }
+  .card-icon.blue  { background: #e6f4ff; }
+  .card-icon.purple { background: #f0e6ff; }
+  .card-icon.green  { background: #e6fff0; }
+  .card-body { flex: 1; }
+  .card-title { font-size: 16px; font-weight: 700; color: #111; margin-bottom: 4px; }
+  .card-desc { font-size: 13px; color: #888; line-height: 1.6; }
+  .card-arrow { color: #ccc; font-size: 18px; }
+
+  footer {
+    text-align: center; padding: 40px 20px;
+    font-size: 12px; color: #bbb;
+  }
+  footer a { color: #1677ff; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>wx-posts</h1>
+  <p>公众号文章配套资源 · 模板 · 代码示例</p>
+  <span class="badge">OPEN SOURCE</span>
+</header>
+
+<main>
+  <h2>文章资源</h2>
+  <div class="card-grid">
+
+    <a class="card" href="./soul-md/">
+      <div class="card-icon blue">🧬</div>
+      <div class="card-body">
+        <div class="card-title">SOUL.md — 赋予 Agent 灵魂</div>
+        <div class="card-desc">完整 SOUL.md 模板，5 个模块，直接复制使用。让你的 AI Agent 从「能用」变成「懂你」。</div>
+      </div>
+      <div class="card-arrow">›</div>
+    </a>
+
+  </div>
+</main>
+
+<footer>
+  <p>Built with ❤️ · <a href="https://github.com/pythias/wx-posts" target="_blank">GitHub</a></p>
+</footer>
+
+</body>
+</html>

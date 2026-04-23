@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOUL.md — 赋予你的 AI Agent 真正的灵魂</title>
+<meta name="description" content="5 个模块，写完不超过一页纸，让你的 Agent 从能用变成懂你。">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, 'PingFang SC', 'Helvetica Neue', sans-serif;
+    background: #f5f7fa; min-height: 100vh; color: #333; line-height: 1.8;
+  }
+
+  /* ── Header ── */
+  header {
+    background: linear-gradient(135deg, #0a0e1a 0%, #1a1f35 100%);
+    padding: 52px 24px 44px; text-align: center;
+  }
+  header h1 {
+    font-size: 30px; font-weight: 800; color: #fff; margin-bottom: 10px; line-height: 1.3;
+  }
+  header h1 span {
+    background: linear-gradient(90deg, #00d4ff, #8b5cf6);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  }
+  header p { font-size: 15px; color: #8892b0; max-width: 500px; margin: 0 auto; }
+  nav {
+    background: #161b22; border-bottom: 1px solid #30363d;
+    padding: 11px 24px; display: flex; align-items: center; gap: 10px; font-size: 13px;
+  }
+  nav a { color: #58a6ff; text-decoration: none; }
+  nav span { color: #484f58; }
+
+  /* ── Main ── */
+  main { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+  /* ── Prose ── */
+  .prose { background: #fff; border-radius: 12px; padding: 32px 32px; border: 1px solid #e8e8e8; margin-bottom: 20px; }
+  .prose p { font-size: 15px; color: #444; margin-bottom: 16px; }
+  .prose strong { color: #111; }
+  .prose h3 { font-size: 18px; font-weight: 700; color: #111; margin: 28px 0 12px; }
+  .prose h3:first-child { margin-top: 0; }
+  hr { border: none; border-top: 1px solid #f0f0f0; margin: 28px 0; }
+
+  /* ── Identity cards ── */
+  .id-card {
+    border-radius: 0 10px 10px 0; padding: 0; margin-bottom: 16px; overflow: hidden;
+    border-left: 4px solid #1677ff; background: #fafafa; border: 1px solid #ebebeb; border-left-width: 4px;
+  }
+  .id-card:nth-child(1) { border-left-color: #1677ff; }
+  .id-card:nth-child(2) { border-left-color: #722ed1; }
+  .id-card:nth-child(3) { border-left-color: #10b981; }
+  .id-card:nth-child(4) { border-left-color: #f59e0b; }
+
+  .id-card-head {
+    padding: 14px 16px 10px 18px;
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  }
+  .id-card-title { font-size: 15px; font-weight: 700; color: #111; }
+  .copy-snippet-btn {
+    padding: 4px 13px; font-size: 12px; border-radius: 6px; white-space: nowrap;
+    border: 1px solid #d9d9d9; background: #fff; cursor: pointer;
+    color: #555; transition: all .15s; font-weight: 500; flex-shrink: 0;
+  }
+  .copy-snippet-btn:hover { background: #1677ff; color: #fff; border-color: #1677ff; }
+  .copy-snippet-btn.ok { background: #52c41a; color: #fff; border-color: #52c41a; }
+
+  /* Code snippet inside card */
+  .snippet {
+    background: #1e2432; border-top: 1px solid #e0e0e0;
+    padding: 14px 18px; font-size: 13px; line-height: 1.85;
+    color: #c9d1d9; white-space: pre-wrap; word-break: break-word;
+    font-family: 'Menlo', 'Monaco', 'Consolas', monospace;
+  }
+
+  /* ── Formula card ── */
+  .formula {
+    background: linear-gradient(135deg, #0a0e1a, #1a1f35);
+    border-radius: 12px; padding: 28px 28px; text-align: center; margin-bottom: 20px;
+  }
+  .formula p {
+    font-size: 13px; color: #8892b0; margin-bottom: 12px;
+  }
+  .formula blockquote {
+    font-size: 18px; font-weight: 700; color: #fff; line-height: 1.6;
+    border: none; padding: 0;
+  }
+  .formula blockquote span { color: #00d4ff; }
+
+  /* ── Tags ── */
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 0 4px; }
+  .tag {
+    font-size: 12px; padding: 4px 13px; border-radius: 20px;
+    background: #e6f4ff; color: #1677ff; border: 1px solid #bae0ff;
+  }
+
+  footer {
+    text-align: center; padding: 40px 20px;
+    font-size: 12px; color: #bbb; border-top: 1px solid #e8e8e8;
+  }
+  footer a { color: #1677ff; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="../">wx-posts</a>
+  <span>/</span>
+  <span style="color:#e6edf3">SOUL.md</span>
+</nav>
+
+<header>
+  <h1>SOUL.md —<br><span>赋予你的 AI Agent 真正的灵魂</span></h1>
+  <p>5 个模块，写完不超过一页纸</p>
+</header>
+
+<main>
+
+  <!-- Intro -->
+  <div class="prose">
+    <p>我们每天都在用 AI，但大多数人用的是一个没有立场、没有个性、没有边界的「通用助手」。</p>
+    <p><strong>SOUL.md 改变这一切。</strong></p>
+    <p>它是一份写给 AI 的说明书——告诉它你是谁、它该是谁、它能做什么、绝对不能做什么。</p>
+    <p style="margin-bottom:0">5 个模块，写完不超过一页纸，却能让你的 Agent 从「能用」变成「好用」。</p>
+  </div>
+
+  <!-- Identity cards -->
+  <div class="prose" style="padding:28px 28px">
+    <h3 style="margin-top:0;margin-bottom:20px">不同身份，怎么写自己的 SOUL.md？</h3>
+    <p style="font-size:13px;color:#888;margin-bottom:20px">点击「复制代码」→ 粘贴到 AI 工具的系统提示词 → 按需修改</p>
+
+    <!-- Card 1 -->
+    <div class="id-card">
+      <div class="id-card-head">
+        <div class="id-card-title">👨‍👩‍👧 辅导孩子的家长</div>
+        <button class="copy-snippet-btn" onclick="copySnippet('snip-parent', this)">复制代码</button>
+      </div>
+      <pre class="snippet" id="snip-parent">你是"学习小助手"，专门帮助 8-12 岁小学生理解作业题目。
+用简单词汇解释，多打比方，每次解释后问"懂了吗？"
+禁止直接给出答案，只引导孩子自己推导。
+遇到家长情绪激动时，先共情再给建议。</pre>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="id-card">
+      <div class="id-card-head">
+        <div class="id-card-title">🎨 做 AI 漫剧的个人创作者</div>
+        <button class="copy-snippet-btn" onclick="copySnippet('snip-creator', this)">复制代码</button>
+      </div>
+      <pre class="snippet" id="snip-creator">你是"剧本拍档"，协助创作连载 AI 漫剧的分镜脚本和角色台词。
+风格偏日系热血，对话要简短有力，每幕不超过 6 格。
+禁止使用说教性台词，角色要有缺点和成长弧。
+遇到剧情卡壳时，主动提供 3 个方向供选择，不要只等待。</pre>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="id-card">
+      <div class="id-card-head">
+        <div class="id-card-title">💻 普通开发工程师</div>
+        <button class="copy-snippet-btn" onclick="copySnippet('snip-dev', this)">复制代码</button>
+      </div>
+      <pre class="snippet" id="snip-dev">你是"代码搭子"，帮助处理日常开发任务，默认技术栈为 Python + Go。
+回答要简洁，直接给可运行代码，不写废话注释。
+禁止建议重构整个架构，只解决眼前问题。
+不确定的地方明说，不编造 API 用法或库的行为。</pre>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="id-card">
+      <div class="id-card-head">
+        <div class="id-card-title">✍️ 写小说的作者</div>
+        <button class="copy-snippet-btn" onclick="copySnippet('snip-author', this)">复制代码</button>
+      </div>
+      <pre class="snippet" id="snip-author">你是"缪斯"，协助创作现代都市悬疑小说，主笔是我，你负责补充细节。
+写作风格：克制、留白、用细节说话，避免直白情绪描写。
+禁止自作主张推进主线剧情，只在我提供方向后展开。
+每次续写结尾留一个小钩子，不要自己收尾。</pre>
+    </div>
+  </div>
+
+  <!-- Formula -->
+  <div class="formula">
+    <p>核心公式就这一句</p>
+    <blockquote>
+      <span>我是谁</span> + <span>你该怎么说话</span><br>
+      + <span>必须做什么</span> + <span>绝不做什么</span>
+    </blockquote>
+  </div>
+
+  <div class="prose" style="padding:22px 28px">
+    <p style="margin-bottom:16px;font-size:15px">把这四行写清楚，你的 AI 就不再是工具，而是懂你的搭档。</p>
+    <div class="tags">
+      <span class="tag">#SOUL.md</span>
+      <span class="tag">#AI Agent</span>
+      <span class="tag">#提示工程</span>
+      <span class="tag">#个人AI助手</span>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>文章来源：<a href="https://github.com/pythias/wx-posts" target="_blank">github.com/pythias/wx-posts</a> · MIT License</p>
+</footer>
+
+<script>
+function copySnippet(id, btn) {
+  const text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const orig = btn.textContent;
+    btn.textContent = '已复制 ✓';
+    btn.classList.add('ok');
+    setTimeout(() => { btn.textContent = orig; btn.classList.remove('ok'); }, 2000);
+  }).catch(() => {
+    // fallback
+    const el = document.getElementById(id);
+    const range = document.createRange();
+    range.selectNodeContents(el);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+    btn.textContent = '已选中，请按 Ctrl+C';
+    btn.classList.add('ok');
+    setTimeout(() => { btn.textContent = '复制代码'; btn.classList.remove('ok'); }, 3000);
+  });
+}
+</script>
+
+</body>
+</html>
