@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>TECH GUIDE</title>
+<style>
+* { margin:0;padding:0;box-sizing:border-box; }
+body { background:#0a0e1a;display:flex;flex-direction:column;align-items:center; }
+</style>
+</head>
+<body>
+
+<section id="slide1" style="
+  width:390px;height:520px;background:#0a0e1a;position:relative;
+  overflow:hidden;display:flex;flex-direction:column;
+  border-bottom:1px solid rgba(255,255,255,.04);font-family:-apple-system,'PingFang SC','Noto Sans SC',sans-serif;
+  color:#f1f5f9;
+">
+  <!-- grid bg -->
+  <div style="position:absolute;inset:0;pointer-events:none;z-index:0;
+    background-image:linear-gradient(rgba(0,212,255,.04) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(0,212,255,.04) 1px,transparent 1px);
+    background-size:32px 32px;"></div>
+  <!-- orb -->
+  <div style="position:absolute;width:320px;height:320px;
+    top:-80px;right:-80px;border-radius:50%;filter:blur(70px);pointer-events:none;z-index:0;
+    background:radial-gradient(circle,#00d4ff18 0%,transparent 70%);"></div>
+  <div style="position:absolute;width:280px;height:280px;bottom:-60px;left:-60px;border-radius:50%;filter:blur(70px);pointer-events:none;z-index:0;background:radial-gradient(circle,#8b5cf618 0%,transparent 70%);"></div>
+  <!-- content -->
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;flex:1;">
+    
+    
+<div style="display:flex;align-items:center;justify-content:space-between;padding:12px 20px 0;">
+  <div style="display:flex;align-items:center;gap:7px;font-size:11px;color:#64748b;letter-spacing:.05em;">
+    <div style="width:6px;height:6px;border-radius:50%;
+      background:linear-gradient(135deg,#00d4ff,#8b5cf6);
+      box-shadow:0 0 7px #00d4ff;"></div>
+    TECH GUIDE
+  </div>
+  <span style="display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:10px;font-weight:500;letter-spacing:.04em;color:#00d4ff;border:1px solid #00d4ff33;background:#00d4ff14;">封面</span>
+</div>
+
+    <div style="flex:1;display:flex;flex-direction:column;justify-content:center;padding:10px 28px 32px;">
+      <div style="display:flex;align-items:center;gap:7px;margin-bottom:12px;">
+        <div style="width:22px;height:1px;background:linear-gradient(90deg,#00d4ff,transparent);"></div>
+        <span style="font-size:10px;letter-spacing:.12em;color:#00d4ff;text-transform:uppercase;font-weight:500;">TECH GUIDE</span>
+      </div>
+      <h1 style="font-size:28px;font-weight:800;line-height:1.15;margin-bottom:8px;letter-spacing:-.02em;">
+        GenericAgent<br>
+        <span style="background:linear-gradient(135deg,#00d4ff 0%,#8b5cf6 60%);
+          -webkit-background-clip:text;-webkit-text-fill-color:transparent;">让 AI 真正操控你的电脑</span>
+      </h1>
+      <p style="font-size:12px;color:#94a3b8;line-height:1.5;margin-bottom:14px;">国产自举 Agent：3K 行代码 + 9 工具，每次任务自动沉淀 Skill，越用越强</p>
+      <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:16px;"><span style="display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:10px;font-weight:500;letter-spacing:.04em;color:#00d4ff;border:1px solid #00d4ff33;background:#00d4ff14;">自我进化</span><span style="display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:10px;font-weight:500;letter-spacing:.04em;color:#8b5cf6;border:1px solid #8b5cf633;background:#8b5cf614;">极简架构</span><span style="display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:10px;font-weight:500;letter-spacing:.04em;color:#10b981;border:1px solid #10b98133;background:#10b98114;">强执行力</span><span style="display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:10px;font-weight:500;letter-spacing:.04em;color:#f472b6;border:1px solid #f472b633;background:#f472b614;">高兼容</span><span style="display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:10px;font-weight:500;letter-spacing:.04em;color:#f59e0b;border:1px solid #f59e0b33;background:#f59e0b14;">极致省 Token</span></div>
+      <div style="display:flex;gap:22px;"><div><div style="font-size:19px;font-weight:700;background:linear-gradient(135deg,#00d4ff,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">3K</div><div style="font-size:10px;color:#64748b;margin-top:1px;">核心代码</div></div><div><div style="font-size:19px;font-weight:700;background:linear-gradient(135deg,#00d4ff,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">&lt;30K</div><div style="font-size:10px;color:#64748b;margin-top:1px;">上下文</div></div><div><div style="font-size:19px;font-weight:700;background:linear-gradient(135deg,#00d4ff,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">9</div><div style="font-size:10px;color:#64748b;margin-top:1px;">原子工具</div></div><div><div style="font-size:19px;font-weight:700;background:linear-gradient(135deg,#00d4ff,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">6.3k</div><div style="font-size:10px;color:#64748b;margin-top:1px;">GitHub Star</div></div></div>
+    </div>
+    
+  </div>
+  <!-- page num -->
+  <span style="position:absolute;bottom:10px;right:16px;font-size:10px;
+    color:#64748b;z-index:10;letter-spacing:.05em;">01 / 08</span>
+</section>
+
+
+<section id="slide2" style="
+  width:390px;height:520px;background:#0a0e1a;position:relative;
+  overflow:hidden;display:flex;flex-direction:column;
+  border-bottom:1px solid rgba(255,255,255,.04);font-family:-apple-system,'PingFang SC','Noto Sans SC',sans-serif;
+  color:#f1f5f9;
+">
+  <!-- grid bg -->
+  <div style="position:absolute;inset:0;pointer-events:none;z-index:0;
+    background-image:linear-gradient(rgba(0,212,255,.04) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(0,212,255,.04) 1px,transparent 1px);
+    background-size:32px 32px;"></div>
+  <!-- orb -->
+  <div style="position:absolute;width:320px;height:320px;
+    top:-80px;right:-80px;border-radius:50%;filter:blur(70px);pointer-events:none;z-index:0;
+    background:radial-gradient(circle,#00d4ff18 0%,transparent 70%);"></div>
+  
+  <!-- content -->
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;flex:1;">
+    
+    
+<div style="display:flex;align-items:center;justify-content:space-between;padding:12px 20px 0;">
+  <div style="display:flex;align-items:center;gap:7px;font-size:11px;color:#64748b;letter-spacing:.05em;">
+    <div style="width:6px;height:6px;border-radius:50%;
+      background:linear-gradient(135deg,#00d4ff,#8b5cf6);
+      box-shadow:0 0 7px #00d4ff;"></div>
+    TECH GUIDE
+  </div>
+  <span style="display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:10px;font-weight:500;letter-spacing:.04em;color:#00d4ff;border:1px solid #00d4ff33;background:#00d4ff14;">五大核心</span>
+</div>
+
+    <div style="flex:1;padding:8px 19px 24px;display:flex;flex-direction:column;gap:7px;">
+      <div>
+        <div style="margin-bottom:5px;"><span style="display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:10px;font-weight:500;letter-spacing:.04em;color:#00d4ff;border:1px solid #00d4ff33;background:#00d4ff14;">五大核心</span></div>
+        <h2 style="font-size:17px;font-weight:700;line-height:1.25;">
+          <span style="background:linear-gradient(135deg,#00d4ff,#8b5cf6);
+            -webkit-background-clip:text;-webkit-text-fill-color:transparent;">核心优势一览</span>
+          GenericAgent
+        </h2>
+        <p style="font-size:11px;color:#94a3b8;line-height:1.5;margin-top:4px;">5 大核心特性，区别于所有同类框架</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px;">
+        <div style="background:#0f1629;border:1px solid rgba(255,255,255,.08);
+          border-radius:10px;padding:9px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+            <div style="width:32px;height:32px;border-radius:9px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:15px;background:#00d4ff1a;border:1px solid #00d4ff33;">🔄</div>
+            <span style="font-size:12px;font-weight:600;">自我进化</span>
+          </div>
+          <p style="font-size:11px;color:#94a3b8;line-height:1.4;">每任务自动沉淀 Skill，技能树随使用持续生长</p>
+          <div style="margin-top:5px;font-size:10px;color:#64748b;padding-top:5px;border-top:1px solid rgba(255,255,255,.07);">越用越强</div>
+        </div>
+        <div style="background:#0f1629;border:1px solid rgba(255,255,255,.08);
+          border-radius:10px;padding:9px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+            <div style="width:32px;height:32px;border-radius:9px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:15px;background:#8b5cf61a;border:1px solid #8b5cf633;">📦</div>
+            <span style="font-size:12px;font-weight:600;">极简架构</span>
+          </div>
+          <p style="font-size:11px;color:#94a3b8;line-height:1.4;">3K 行核心代码，Agent Loop 仅百行，pip install 即用</p>
+          <div style="margin-top:5px;font-size:10px;color:#64748b;padding-top:5px;border-top:1px solid rgba(255,255,255,.07);">零负担</div>
+        </div>
+        <div style="background:#0f1629;border:1px solid rgba(255,255,255,.08);
+          border-radius:10px;padding:9px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+            <div style="width:32px;height:32px;border-radius:9px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:15px;background:#10b9811a;border:1px solid #10b98133;">💪</div>
+            <span style="font-size:12px;font-weight:600;">强执行力</span>
+          </div>
+          <p style="font-size:11px;color:#94a3b8;line-height:1.4;">注入真实浏览器保留登录态，9 原子工具接管系统</p>
+          <div style="margin-top:5px;font-size:10px;color:#64748b;padding-top:5px;border-top:1px solid rgba(255,255,255,.07);">直接操控</div>
+        </div>
+        <div style="background:#0f1629;border:1px solid rgba(255,255,255,.08);
+          border-radius:10px;padding:9px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+            <div style="width:32px;height:32px;border-radius:9px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:15px;background:#f472b61a;border:1px solid #f472b633;">🔗</div>
+            <span style="font-size:12px;font-weight:600;">高兼容</span>
+          </div>
+          <p style="font-size:11px;color:#94a3b8;line-height:1.4;">Claude / Gemini / Kimi / MiniMax 全面支持，跨平台</p>
+          <div style="margin-top:5px;font-size:10px;color:#64748b;padding-top:5px;border-top:1px solid rgba(255,255,255,.07);">全模型</div>
+        </div></div>
+      
+    </div>
+    
+  </div>
+  <!-- page num -->
+  <span style="position:absolute;bottom:10px;right:16px;font-size:10px;
+    color:#64748b;z-index:10;letter-spacing:.05em;">02 / 08</span>
+</section>
+
+
+<section id="slide3" style="
+  width:390px;height:520px;background:#0a0e1a;position:relative;
+  overflow:hidden;display:flex;flex-direction:column;
+  border-bottom:1px solid rgba(255,255,255,.04);font-family:-apple-system,'PingFang SC','Noto Sans SC',sans-serif;
+  color:#f1f5f9;
+">
+  <!-- grid bg -->
+  <div style="position:absolute;inset:0;pointer-events:none;z-index:0;
+    background-image:linear-gradient(rgba(0,212,255,.04) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(0,212,255,.04) 1px,transparent 1px);
+    background-size:32px 32px;"></div>
+  <!-- orb -->
+  <div style="position:absolute;width:320px;height:320px;
+    top:-80px;right:-80px;border-radius:50%;filter:blur(70px);pointer-events:none;z-index:0;
+    background:radial-gradient(circle,#10b98118 0%,transparent 70%);"></div>
+  
+  <!-- content -->
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;flex:1;">
+    
+    
+<div style="display:flex;align-items:center;justify-content:space-between;padding:12px 20px 0;">
+  <div style="display:flex;align-items:center;gap:7px;font-size:11px;color:#64748b;letter-spacing:.05em;">
+    <div style="width:6px;height:6px;border-radius:50%;
+      background:linear-gradient(135deg,#00d4ff,#8b5cf6);
+      box-shadow:0 0 7px #00d4ff;"></div>
+    TECH GUIDE
+  </div>
+  <span style="display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:10px;font-weight:500;letter-spacing:.04em;color:#10b981;border:1px solid #10b98133;background:#10b98114;">核心①</span>
+</div>
+
+    <div style="flex:1;padding:8px 19px 24px;display:flex;flex-direction:column;gap:7px;">
+      <div>
+        <div style="margin-bottom:5px;"><span style="display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:10px;font-weight:500;letter-spacing:.04em;color:#10b981;border:1px solid #10b98133;background:#10b98114;">核心①</span></div>
+        <h2 style="font-size:17px;font-weight:700;line-height:1.25;">
+          <span style="background:linear-gradient(135deg,#00d4ff,#8b5cf6);
+            -webkit-background-clip:text;-webkit-text-fill-color:transparent;">Skill 技能树</span>
+          自我进化：
+        </h2>
+        <p style="font-size:11px;color:#94a3b8;line-height:1.5;margin-top:4px;">每解决一个新任务，就将执行路径自动固化为 Skill，供后续直接复用</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px;">
+        <div style="background:#0f1629;border:1px solid rgba(255,255,255,.08);
+          border-radius:10px;padding:9px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+            <div style="width:32px;height:32px;border-radius:9px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:15px;background:#00d4ff1a;border:1px solid #00d4ff33;">🌱</div>
+            <span style="font-size:12px;font-weight:600;">任务 → Skill</span>
+          </div>
+          <p style="font-size:11px;color:#94a3b8;line-height:1.4;">遇到新任务：安装依赖、编写脚本、调试验证</p>
+          <div style="margin-top:5px;font-size:10px;color:#64748b;padding-top:5px;border-top:1px solid rgba(255,255,255,.07);">自主摸索</div>
+        </div>
+        <div style="background:#0f1629;border:1px solid rgba(255,255,255,.08);
+          border-radius:10px;padding:9px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+            <div style="width:32px;height:32px;border-radius:9px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:15px;background:#8b5cf61a;border:1px solid #8b5cf633;">💾</div>
+            <span style="font-size:12px;font-weight:600;">写入记忆层</span>
+          </div>
+          <p style="font-size:11px;color:#94a3b8;line-height:1.4;">执行路径自动沉淀到 L3 Skill 库，无需人工干预</p>
+          <div style="margin-top:5px;font-size:10px;color:#64748b;padding-top:5px;border-top:1px solid rgba(255,255,255,.07);">自动结晶</div>
+        </div>
+        <div style="background:#0f1629;border:1px solid rgba(255,255,255,.08);
+          border-radius:10px;padding:9px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+            <div style="width:32px;height:32px;border-radius:9px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:15px;background:#10b9811a;border:1px solid #10b98133;">⚡</div>
+            <span style="font-size:12px;font-weight:600;">下次直接用</span>
+          </div>
+          <p style="font-size:11px;color:#94a3b8;line-height:1.4;">同类任务一句话触发，一个 Agent 养成独一无二的技能树</p>
+          <div style="margin-top:5px;font-size:10px;color:#64748b;padding-top:5px;border-top:1px solid rgba(255,255,255,.07);">直接复用</div>
+        </div>
+        <div style="background:#0f1629;border:1px solid rgba(255,255,255,.08);
+          border-radius:10px;padding:9px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+            <div style="width:32px;height:32px;border-radius:9px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:15px;background:#f472b61a;border:1px solid #f472b633;">🌲</div>
+            <span style="font-size:12px;font-weight:600;">技能树生长</span>
+          </div>
+          <p style="font-size:11px;color:#94a3b8;line-height:1.4;">用得越久，积累越多，最终成为完全属于你的 Agent</p>
+          <div style="margin-top:5px;font-size:10px;color:#64748b;padding-top:5px;border-top:1px solid rgba(255,255,255,.07);">自我进化</div>
+        </div></div>
+      
+    </div>
+    
+  </div>
+  <!-- page num -->
+  <span style="position:absolute;bottom:10px;right:16px;font-size:10px;
+    color:#64748b;z-index:10;letter-spacing:.05em;">03 / 08</span>
+</section>
+
+
+<section id="slide4" style="
+  width:390px;height:520px;background:#0a0e1a;position:relative;
+  overflow:hidden;display:flex;flex-direction:column;
+  border-bottom:1px solid rgba(255,255,255,.04);font-family:-apple-system,'PingFang SC','Noto Sans SC',sans-serif;
+  color:#f1f5f9;
+">
+  <!-- grid bg -->
+  <div style="position:absolute;inset:0;pointer-events:none;z-index:0;
+    background-image:linear-gradient(rgba(0,212,255,.04) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(0,212,255,.04) 1px,transparent 1px);
+    background-size:32px 32px;"></div>
+  <!-- orb -->
+  <div style="position:absolute;width:320px;height:320px;
+    top:-80px;right:-80px;border-radius:50%;filter:blur(70px);pointer-events:none;z-index:0;
+    background:radial-gradient(circle,#8b5cf618 0%,transparent 70%);"></div>
+  
+  <!-- content -->
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;flex:1;">
+    
+    
+<div style="display:flex;align-items:center;justify-content:space-between;padding:12px 20px 0;">
+  <div style="display:flex;align-items:center;gap:7px;font-size:11px;color:#64748b;letter-spacing:.05em;">
+    <div style="width:6px;height:6px;border-radius:50%;
+      background:linear-gradient(135deg,#00d4ff,#8b5cf6);
+      box-shadow:0 0 7px #00d4ff;"></div>
+    TECH GUIDE
+  </div>
+  <span style="display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:10px;font-weight:500;letter-spacing:.04em;color:#8b5cf6;border:1px solid #8b5cf633;background:#8b5cf614;">核心②</span>
+</div>
+
+    <div style="flex:1;padding:8px 19px 24px;display:flex;flex-direction:column;gap:7px;">
+      <div>
+        <div style="margin-bottom:5px;"><span style="display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:10px;font-weight:500;letter-spacing:.04em;color:#8b5cf6;border:1px solid #8b5cf633;background:#8b5cf614;">核心②</span></div>
+        <h2 style="font-size:17px;font-weight:700;line-height:1.25;">
+          <span style="background:linear-gradient(135deg,#00d4ff,#8b5cf6);
+            -webkit-background-clip:text;-webkit-text-fill-color:transparent;">3K 行 vs 53 万行</span>
+          极简架构：
+        </h2>
+        <p style="font-size:11px;color:#94a3b8;line-height:1.5;margin-top:4px;">OpenClaw 53 万行代码，GenericAgent 仅 3K 行，核心 Agent Loop 约百行</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px;">
+        <div style="background:#0f1629;border:1px solid rgba(255,255,255,.08);
+          border-radius:10px;padding:9px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+            <div style="width:32px;height:32px;border-radius:9px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:15px;background:#00d4ff1a;border:1px solid #00d4ff33;">📉</div>
+            <span style="font-size:12px;font-weight:600;">代码量</span>
+          </div>
+          <p style="font-size:11px;color:#94a3b8;line-height:1.4;">GenericAgent 仅 3K 行，OpenClaw ~530K 行，少 99.4%</p>
+          <div style="margin-top:5px;font-size:10px;color:#64748b;padding-top:5px;border-top:1px solid rgba(255,255,255,.07);">vs OpenClaw</div>
+        </div>
+        <div style="background:#0f1629;border:1px solid rgba(255,255,255,.08);
+          border-radius:10px;padding:9px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+            <div style="width:32px;height:32px;border-radius:9px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:15px;background:#8b5cf61a;border:1px solid #8b5cf633;">📦</div>
+            <span style="font-size:12px;font-weight:600;">零依赖</span>
+          </div>
+          <p style="font-size:11px;color:#94a3b8;line-height:1.4;">pip install requests streamlit pywebview，无复杂依赖树</p>
+          <div style="margin-top:5px;font-size:10px;color:#64748b;padding-top:5px;border-top:1px solid rgba(255,255,255,.07);">三行安装</div>
+        </div>
+        <div style="background:#0f1629;border:1px solid rgba(255,255,255,.08);
+          border-radius:10px;padding:9px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+            <div style="width:32px;height:32px;border-radius:9px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:15px;background:#10b9811a;border:1px solid #10b98133;">🔄</div>
+            <span style="font-size:12px;font-weight:600;">核心循环</span>
+          </div>
+          <p style="font-size:11px;color:#94a3b8;line-height:1.4;">agent_loop.py 仅约 100 行代码，逻辑透明可改</p>
+          <div style="margin-top:5px;font-size:10px;color:#64748b;padding-top:5px;border-top:1px solid rgba(255,255,255,.07);">agent_loop.py</div>
+        </div>
+        <div style="background:#0f1629;border:1px solid rgba(255,255,255,.08);
+          border-radius:10px;padding:9px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+            <div style="width:32px;height:32px;border-radius:9px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:15px;background:#f472b61a;border:1px solid #f472b633;">🚀</div>
+            <span style="font-size:12px;font-weight:600;">部署零负担</span>
+          </div>
+          <p style="font-size:11px;color:#94a3b8;line-height:1.4;">pip + API Key 即可，无需多服务编排，无需 Docker</p>
+          <div style="margin-top:5px;font-size:10px;color:#64748b;padding-top:5px;border-top:1px solid rgba(255,255,255,.07);">立即上手</div>
+        </div></div>
+      
+    </div>
+    
+  </div>
+  <!-- page num -->
+  <span style="position:absolute;bottom:10px;right:16px;font-size:10px;
+    color:#64748b;z-index:10;letter-spacing:.05em;">04 / 08</span>
+</section>
+
+
+<section id="slide5" style="
+  width:390px;height:520px;background:#0a0e1a;position:relative;
+  overflow:hidden;display:flex;flex-direction:column;
+  border-bottom:1px solid rgba(255,255,255,.04);font-family:-apple-system,'PingFang SC','Noto Sans SC',sans-serif;
+  color:#f1f5f9;
+">
+  <!-- grid bg -->
+  <div style="position:absolute;inset:0;pointer-events:none;z-index:0;
+    background-image:linear-gradient(rgba(0,212,255,.04) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(0,212,255,.04) 1px,transparent 1px);
+    background-size:32px 32px;"></div>
+  <!-- orb -->
+  <div style="position:absolute;width:320px;height:320px;
+    top:-80px;right:-80px;border-radius:50%;filter:blur(70px);pointer-events:none;z-index:0;
+    background:radial-gradient(circle,#f59e0b18 0%,transparent 70%);"></div>
+  
+  <!-- content -->
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;flex:1;">
+    
+    
+<div style="display:flex;align-items:center;justify-content:space-between;padding:12px 20px 0;">
+  <div style="display:flex;align-items:center;gap:7px;font-size:11px;color:#64748b;letter-spacing:.05em;">
+    <div style="width:6px;height:6px;border-radius:50%;
+      background:linear-gradient(135deg,#00d4ff,#8b5cf6);
+      box-shadow:0 0 7px #00d4ff;"></div>
+    TECH GUIDE
+  </div>
+  <span style="display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:10px;font-weight:500;letter-spacing:.04em;color:#f59e0b;border:1px solid #f59e0b33;background:#f59e0b14;">核心③</span>
+</div>
+
+    <div style="flex:1;padding:8px 19px 24px;display:flex;flex-direction:column;gap:7px;">
+      <div>
+        <div style="margin-bottom:5px;"><span style="display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:10px;font-weight:500;letter-spacing:.04em;color:#f59e0b;border:1px solid #f59e0b33;background:#f59e0b14;">核心③</span></div>
+        <h2 style="font-size:17px;font-weight:700;line-height:1.25;">
+          <span style="background:linear-gradient(135deg,#00d4ff,#8b5cf6);
+            -webkit-background-clip:text;-webkit-text-fill-color:transparent;">真实浏览器 + 9 工具</span>
+          强执行力：
+        </h2>
+        <p style="font-size:11px;color:#94a3b8;line-height:1.5;margin-top:4px;">注入真实 Chrome（保留登录态），9 个原子工具覆盖全部操控场景</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px;">
+        <div style="background:#0f1629;border:1px solid rgba(255,255,255,.08);
+          border-radius:10px;padding:9px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+            <div style="width:32px;height:32px;border-radius:9px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:15px;background:#00d4ff1a;border:1px solid #00d4ff33;">🌐</div>
+            <span style="font-size:12px;font-weight:600;">真实浏览器</span>
+          </div>
+          <p style="font-size:11px;color:#94a3b8;line-height:1.4;">注入真实 Chrome，保留登录态和 Cookie，非无头/沙箱</p>
+          <div style="margin-top:5px;font-size:10px;color:#64748b;padding-top:5px;border-top:1px solid rgba(255,255,255,.07);">vs OpenClaw 沙箱</div>
+        </div>
+        <div style="background:#0f1629;border:1px solid rgba(255,255,255,.08);
+          border-radius:10px;padding:9px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+            <div style="width:32px;height:32px;border-radius:9px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:15px;background:#8b5cf61a;border:1px solid #8b5cf633;">🖥️</div>
+            <span style="font-size:12px;font-weight:600;">键鼠操控</span>
+          </div>
+          <p style="font-size:11px;color:#94a3b8;line-height:1.4;">直接控制鼠标键盘，执行任何桌面操作</p>
+          <div style="margin-top:5px;font-size:10px;color:#64748b;padding-top:5px;border-top:1px solid rgba(255,255,255,.07);">系统级</div>
+        </div>
+        <div style="background:#0f1629;border:1px solid rgba(255,255,255,.08);
+          border-radius:10px;padding:9px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+            <div style="width:32px;height:32px;border-radius:9px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:15px;background:#10b9811a;border:1px solid #10b98133;">👀</div>
+            <span style="font-size:12px;font-weight:600;">屏幕视觉</span>
+          </div>
+          <p style="font-size:11px;color:#94a3b8;line-height:1.4;">感知屏幕内容，AI 看屏幕做决策</p>
+          <div style="margin-top:5px;font-size:10px;color:#64748b;padding-top:5px;border-top:1px solid rgba(255,255,255,.07);">多模态</div>
+        </div>
+        <div style="background:#0f1629;border:1px solid rgba(255,255,255,.08);
+          border-radius:10px;padding:9px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+            <div style="width:32px;height:32px;border-radius:9px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:15px;background:#f472b61a;border:1px solid #f472b633;">📱</div>
+            <span style="font-size:12px;font-weight:600;">ADB 控制</span>
+          </div>
+          <p style="font-size:11px;color:#94a3b8;line-height:1.4;">通过 ADB 控制安卓手机，自动化手机操作</p>
+          <div style="margin-top:5px;font-size:10px;color:#64748b;padding-top:5px;border-top:1px solid rgba(255,255,255,.07);">移动端</div>
+        </div></div>
+      
+    </div>
+    
+  </div>
+  <!-- page num -->
+  <span style="position:absolute;bottom:10px;right:16px;font-size:10px;
+    color:#64748b;z-index:10;letter-spacing:.05em;">05 / 08</span>
+</section>
+
+
+<section id="slide6" style="
+  width:390px;height:520px;background:#0a0e1a;position:relative;
+  overflow:hidden;display:flex;flex-direction:column;
+  border-bottom:1px solid rgba(255,255,255,.04);font-family:-apple-system,'PingFang SC','Noto Sans SC',sans-serif;
+  color:#f1f5f9;
+">
+  <!-- grid bg -->
+  <div style="position:absolute;inset:0;pointer-events:none;z-index:0;
+    background-image:linear-gradient(rgba(0,212,255,.04) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(0,212,255,.04) 1px,transparent 1px);
+    background-size:32px 32px;"></div>
+  <!-- orb -->
+  <div style="position:absolute;width:320px;height:320px;
+    top:-80px;right:-80px;border-radius:50%;filter:blur(70px);pointer-events:none;z-index:0;
+    background:radial-gradient(circle,#f472b618 0%,transparent 70%);"></div>
+  
+  <!-- content -->
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;flex:1;">
+    
+    
+<div style="display:flex;align-items:center;justify-content:space-between;padding:12px 20px 0;">
+  <div style="display:flex;align-items:center;gap:7px;font-size:11px;color:#64748b;letter-spacing:.05em;">
+    <div style="width:6px;height:6px;border-radius:50%;
+      background:linear-gradient(135deg,#00d4ff,#8b5cf6);
+      box-shadow:0 0 7px #00d4ff;"></div>
+    TECH GUIDE
+  </div>
+  <span style="display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:10px;font-weight:500;letter-spacing:.04em;color:#f472b6;border:1px solid #f472b633;background:#f472b614;">核心④⑤</span>
+</div>
+
+    <div style="flex:1;padding:8px 19px 24px;display:flex;flex-direction:column;gap:7px;">
+      <div>
+        <div style="margin-bottom:5px;"><span style="display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:10px;font-weight:500;letter-spacing:.04em;color:#f472b6;border:1px solid #f472b633;background:#f472b614;">核心④⑤</span></div>
+        <h2 style="font-size:17px;font-weight:700;line-height:1.25;">
+          <span style="background:linear-gradient(135deg,#00d4ff,#8b5cf6);
+            -webkit-background-clip:text;-webkit-text-fill-color:transparent;">全模型 · 低成本</span>
+          高兼容 + 极致省 Token
+        </h2>
+        <p style="font-size:11px;color:#94a3b8;line-height:1.5;margin-top:4px;">支持所有主流模型，Token 消耗是其他 Agent 的零头</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        <div style="display:flex;align-items:flex-start;gap:10px;padding:8px 11px;
+          background:#0f1629;border:1px solid rgba(255,255,255,.08);
+          border-radius:10px;border-left:3px solid #00d4ff;">
+          <div style="width:22px;height:22px;border-radius:7px;flex-shrink:0;
+            display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;
+            background:#00d4ff1a;color:#00d4ff;">1</div>
+          <div style="flex:1;">
+            <div style="font-size:12px;font-weight:600;margin-bottom:2px;">全模型支持</div>
+            <div style="font-size:11px;color:#94a3b8;line-height:1.4;">Claude / Gemini / Kimi / MiniMax，一个框架全部搞定</div>
+            <div style="display:flex;flex-wrap:wrap;gap:3px;margin-top:4px;"><span style="font-size:9px;padding:1px 6px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#94a3b8;">Claude</span><span style="font-size:9px;padding:1px 6px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#94a3b8;">Gemini</span><span style="font-size:9px;padding:1px 6px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#94a3b8;">Kimi</span><span style="font-size:9px;padding:1px 6px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#94a3b8;">MiniMax</span></div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:10px;padding:8px 11px;
+          background:#0f1629;border:1px solid rgba(255,255,255,.08);
+          border-radius:10px;border-left:3px solid #8b5cf6;">
+          <div style="width:22px;height:22px;border-radius:7px;flex-shrink:0;
+            display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;
+            background:#8b5cf61a;color:#8b5cf6;">2</div>
+          <div style="flex:1;">
+            <div style="font-size:12px;font-weight:600;margin-bottom:2px;">跨平台运行</div>
+            <div style="font-size:11px;color:#94a3b8;line-height:1.4;">Windows / macOS / Linux，一个代码库多端一致</div>
+            <div style="display:flex;flex-wrap:wrap;gap:3px;margin-top:4px;"><span style="font-size:9px;padding:1px 6px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#94a3b8;">macOS</span><span style="font-size:9px;padding:1px 6px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#94a3b8;">Linux</span><span style="font-size:9px;padding:1px 6px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#94a3b8;">Windows</span></div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:10px;padding:8px 11px;
+          background:#0f1629;border:1px solid rgba(255,255,255,.08);
+          border-radius:10px;border-left:3px solid #10b981;">
+          <div style="width:22px;height:22px;border-radius:7px;flex-shrink:0;
+            display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;
+            background:#10b9811a;color:#10b981;">3</div>
+          <div style="flex:1;">
+            <div style="font-size:12px;font-weight:600;margin-bottom:2px;">极致省 Token</div>
+            <div style="font-size:11px;color:#94a3b8;line-height:1.4;">上下文窗口 &lt;30K，是其他 Agent（200K~1M）的零头</div>
+            <div style="display:flex;flex-wrap:wrap;gap:3px;margin-top:4px;"><span style="font-size:9px;padding:1px 6px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#94a3b8;">&lt;30K vs 200K~1M</span></div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:10px;padding:8px 11px;
+          background:#0f1629;border:1px solid rgba(255,255,255,.08);
+          border-radius:10px;border-left:3px solid #f472b6;">
+          <div style="width:22px;height:22px;border-radius:7px;flex-shrink:0;
+            display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;
+            background:#f472b61a;color:#f472b6;">4</div>
+          <div style="flex:1;">
+            <div style="font-size:12px;font-weight:600;margin-bottom:2px;">更低成本更高成功率</div>
+            <div style="font-size:11px;color:#94a3b8;line-height:1.4;">分层记忆让关键信息始终在场，噪声少、幻觉低、成本低一个数量级</div>
+            <div style="display:flex;flex-wrap:wrap;gap:3px;margin-top:4px;"><span style="font-size:9px;padding:1px 6px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#94a3b8;">成本低 10x</span><span style="font-size:9px;padding:1px 6px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#94a3b8;">幻觉更低</span></div>
+          </div>
+        </div></div>
+    </div>
+    
+  </div>
+  <!-- page num -->
+  <span style="position:absolute;bottom:10px;right:16px;font-size:10px;
+    color:#64748b;z-index:10;letter-spacing:.05em;">06 / 08</span>
+</section>
+
+
+<section id="slide7" style="
+  width:390px;height:520px;background:#0a0e1a;position:relative;
+  overflow:hidden;display:flex;flex-direction:column;
+  border-bottom:1px solid rgba(255,255,255,.04);font-family:-apple-system,'PingFang SC','Noto Sans SC',sans-serif;
+  color:#f1f5f9;
+">
+  <!-- grid bg -->
+  <div style="position:absolute;inset:0;pointer-events:none;z-index:0;
+    background-image:linear-gradient(rgba(0,212,255,.04) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(0,212,255,.04) 1px,transparent 1px);
+    background-size:32px 32px;"></div>
+  <!-- orb -->
+  <div style="position:absolute;width:320px;height:320px;
+    top:-80px;right:-80px;border-radius:50%;filter:blur(70px);pointer-events:none;z-index:0;
+    background:radial-gradient(circle,#00d4ff18 0%,transparent 70%);"></div>
+  
+  <!-- content -->
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;flex:1;">
+    
+    
+<div style="display:flex;align-items:center;justify-content:space-between;padding:12px 20px 0;">
+  <div style="display:flex;align-items:center;gap:7px;font-size:11px;color:#64748b;letter-spacing:.05em;">
+    <div style="width:6px;height:6px;border-radius:50%;
+      background:linear-gradient(135deg,#00d4ff,#8b5cf6);
+      box-shadow:0 0 7px #00d4ff;"></div>
+    TECH GUIDE
+  </div>
+  <span style="display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:10px;font-weight:500;letter-spacing:.04em;color:#00d4ff;border:1px solid #00d4ff33;background:#00d4ff14;">工具生态</span>
+</div>
+
+    <div style="flex:1;padding:8px 19px 24px;display:flex;flex-direction:column;gap:7px;">
+      <div>
+        <div style="margin-bottom:5px;"><span style="display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:10px;font-weight:500;letter-spacing:.04em;color:#00d4ff;border:1px solid #00d4ff33;background:#00d4ff14;">工具生态</span></div>
+        <h2 style="font-size:17px;font-weight:700;line-height:1.25;">
+          <span style="background:linear-gradient(135deg,#00d4ff,#8b5cf6);
+            -webkit-background-clip:text;-webkit-text-fill-color:transparent;">覆盖全场景</span>
+          9 大原子工具
+        </h2>
+        <p style="font-size:11px;color:#94a3b8;line-height:1.5;margin-top:4px;">代码 / 文件 / 浏览器 / 键鼠 / 视觉 / ADB，一个框架全部拿下</p>
+      </div>
+      <div style="background:#0f1629;border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:10px;">
+        <div style="display:flex;justify-content:center;margin-bottom:8px;">
+          <div style="width:54px;height:54px;border-radius:14px;
+            background:linear-gradient(135deg,#00d4ff33,#8b5cf633);
+            border:1px solid #00d4ff4d;display:flex;flex-direction:column;
+            align-items:center;justify-content:center;gap:3px;">
+            <div style="font-size:20px;">🔧</div>
+            <div style="font-size:9px;font-weight:600;color:#00d4ff;letter-spacing:.05em;">9 Tools</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px;"><div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:6px 4px;text-align:center;"><div style="font-size:14px;margin-bottom:2px;">💻</div><div style="font-size:10px;font-weight:500;color:#94a3b8;">code_run</div></div><div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:6px 4px;text-align:center;"><div style="font-size:14px;margin-bottom:2px;">📖</div><div style="font-size:10px;font-weight:500;color:#94a3b8;">file_read</div></div><div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:6px 4px;text-align:center;"><div style="font-size:14px;margin-bottom:2px;">✏️</div><div style="font-size:10px;font-weight:500;color:#94a3b8;">file_write</div></div><div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:6px 4px;text-align:center;"><div style="font-size:14px;margin-bottom:2px;">🔧</div><div style="font-size:10px;font-weight:500;color:#94a3b8;">file_patch</div></div><div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:6px 4px;text-align:center;"><div style="font-size:14px;margin-bottom:2px;">🌐</div><div style="font-size:10px;font-weight:500;color:#94a3b8;">web_scan</div></div><div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:6px 4px;text-align:center;"><div style="font-size:14px;margin-bottom:2px;">🖥️</div><div style="font-size:10px;font-weight:500;color:#94a3b8;">web_js</div></div><div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:6px 4px;text-align:center;"><div style="font-size:14px;margin-bottom:2px;">✅</div><div style="font-size:10px;font-weight:500;color:#94a3b8;">ask_user</div></div><div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:6px 4px;text-align:center;"><div style="font-size:14px;margin-bottom:2px;">💾</div><div style="font-size:10px;font-weight:500;color:#94a3b8;">checkpoint</div></div><div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:6px 4px;text-align:center;"><div style="font-size:14px;margin-bottom:2px;">📝</div><div style="font-size:10px;font-weight:500;color:#94a3b8;">longterm</div></div></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:5px;"><div style="display:flex;align-items:center;gap:6px;padding:7px 9px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:9px;"><div style="width:7px;height:7px;border-radius:50%;flex-shrink:0;background:#10b981;box-shadow:0 0 5px #10b981;"></div><span style="font-size:11px;color:#94a3b8;">code_run 可动态安装 Python 包</span></div><div style="display:flex;align-items:center;gap:6px;padding:7px 9px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:9px;"><div style="width:7px;height:7px;border-radius:50%;flex-shrink:0;background:#00d4ff;box-shadow:0 0 5px #00d4ff;"></div><span style="font-size:11px;color:#94a3b8;">通过 web_scan + web_js 控制浏览器</span></div><div style="display:flex;align-items:center;gap:6px;padding:7px 9px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:9px;"><div style="width:7px;height:7px;border-radius:50%;flex-shrink:0;background:#8b5cf6;box-shadow:0 0 5px #8b5cf6;"></div><span style="font-size:11px;color:#94a3b8;">支持 ADB 控制安卓设备</span></div><div style="display:flex;align-items:center;gap:6px;padding:7px 9px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:9px;"><div style="width:7px;height:7px;border-radius:50%;flex-shrink:0;background:#f472b6;box-shadow:0 0 5px #f472b6;"></div><span style="font-size:11px;color:#94a3b8;">记忆工具跨会话积累经验</span></div></div>
+    </div>
+    
+  </div>
+  <!-- page num -->
+  <span style="position:absolute;bottom:10px;right:16px;font-size:10px;
+    color:#64748b;z-index:10;letter-spacing:.05em;">07 / 08</span>
+</section>
+
+
+<section id="slide8" style="
+  width:390px;height:520px;background:#0a0e1a;position:relative;
+  overflow:hidden;display:flex;flex-direction:column;
+  border-bottom:1px solid rgba(255,255,255,.04);font-family:-apple-system,'PingFang SC','Noto Sans SC',sans-serif;
+  color:#f1f5f9;
+">
+  <!-- grid bg -->
+  <div style="position:absolute;inset:0;pointer-events:none;z-index:0;
+    background-image:linear-gradient(rgba(0,212,255,.04) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(0,212,255,.04) 1px,transparent 1px);
+    background-size:32px 32px;"></div>
+  <!-- orb -->
+  <div style="position:absolute;width:320px;height:320px;
+    top:-80px;right:-80px;border-radius:50%;filter:blur(70px);pointer-events:none;z-index:0;
+    background:radial-gradient(circle,#00d4ff18 0%,transparent 70%);"></div>
+  <div style="position:absolute;width:280px;height:280px;bottom:-60px;left:-60px;border-radius:50%;filter:blur(70px);pointer-events:none;z-index:0;background:radial-gradient(circle,#8b5cf618 0%,transparent 70%);"></div>
+  <!-- content -->
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;flex:1;">
+    
+    
+<div style="display:flex;align-items:center;justify-content:space-between;padding:12px 20px 0;">
+  <div style="display:flex;align-items:center;gap:7px;font-size:11px;color:#64748b;letter-spacing:.05em;">
+    <div style="width:6px;height:6px;border-radius:50%;
+      background:linear-gradient(135deg,#00d4ff,#8b5cf6);
+      box-shadow:0 0 7px #00d4ff;"></div>
+    TECH GUIDE
+  </div>
+  <span style="display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:10px;font-weight:500;letter-spacing:.04em;color:#10b981;border:1px solid #10b98133;background:#10b98114;">开始构建</span>
+</div>
+
+    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+      padding:10px 28px 28px;text-align:center;">
+      <div style="display:inline-flex;align-items:center;gap:7px;padding:5px 14px;
+        border:1px solid #00d4ff4d;border-radius:20px;font-size:11px;color:#00d4ff;
+        margin-bottom:12px;background:#00d4ff0f;">
+        <div style="width:6px;height:6px;border-radius:50%;background:#00d4ff;
+          box-shadow:0 0 6px #00d4ff;"></div>
+        TECH GUIDE
+      </div>
+      <h2 style="font-size:24px;font-weight:800;line-height:1.2;margin-bottom:8px;letter-spacing:-.02em;">
+        <span style="background:linear-gradient(135deg,#00d4ff,#8b5cf6);
+          -webkit-background-clip:text;-webkit-text-fill-color:transparent;">3K 行改变一切</span><br>
+        去试试吧
+      </h2>
+      <p style="font-size:12px;color:#94a3b8;line-height:1.5;margin-bottom:14px;max-width:260px;">6.3k GitHub Star，arXiv 论文已发表，机器之心报道 · MIT 开源</p>
+      <div style="text-align:left;width:100%;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
+        <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:#94a3b8;"><div style="width:18px;height:18px;border-radius:50%;flex-shrink:0;background:rgba(16,185,129,.15);border:1px solid rgba(16,185,129,.3);display:flex;align-items:center;justify-content:center;font-size:9px;color:#10b981;">✓</div>pip install requests streamlit pywebview</div><div style="display:flex;align-items:center;gap:8px;font-size:12px;color:#94a3b8;"><div style="width:18px;height:18px;border-radius:50%;flex-shrink:0;background:rgba(16,185,129,.15);border:1px solid rgba(16,185,129,.3);display:flex;align-items:center;justify-content:center;font-size:9px;color:#10b981;">✓</div>cp mykey_template.py mykey.py &amp;&amp; 填入 API Key</div><div style="display:flex;align-items:center;gap:8px;font-size:12px;color:#94a3b8;"><div style="width:18px;height:18px;border-radius:50%;flex-shrink:0;background:rgba(16,185,129,.15);border:1px solid rgba(16,185,129,.3);display:flex;align-items:center;justify-content:center;font-size:9px;color:#10b981;">✓</div>python launch.pyw 启动 Web UI</div><div style="display:flex;align-items:center;gap:8px;font-size:12px;color:#94a3b8;"><div style="width:18px;height:18px;border-radius:50%;flex-shrink:0;background:rgba(16,185,129,.15);border:1px solid rgba(16,185,129,.3);display:flex;align-items:center;justify-content:center;font-size:9px;color:#10b981;">✓</div>Star + 加入微信群交流</div>
+      </div>
+      <div style="border-top:1px solid rgba(255,255,255,.07);padding-top:12px;width:100%;
+        display:flex;align-items:center;justify-content:center;gap:7px;
+        font-size:11px;color:#64748b;">
+        <div style="width:5px;height:5px;border-radius:50%;
+          background:linear-gradient(135deg,#00d4ff,#8b5cf6);"></div>
+        github.com/lsdefine/GenericAgent · MIT License
+      </div>
+    </div>
+    
+  </div>
+  <!-- page num -->
+  <span style="position:absolute;bottom:10px;right:16px;font-size:10px;
+    color:#64748b;z-index:10;letter-spacing:.05em;">08 / 08</span>
+</section>
+
+</body>
+</html>
